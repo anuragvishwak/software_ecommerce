@@ -8,12 +8,12 @@ function Navbar() {
 
   return (
     <div className="">
-      <div className="text-[#393e41] absolute w-full flex justify-between p-3 items-center">
+      <div className="text-[#333333] absolute w-full flex justify-between p-3 items-center">
         <img className="h-10" src={img1} />
         <div className="flex space-x-3 items-center">
           <div className="flex font-semibold text-lg items-center space-x-4">
             <button
-              className={`${currentTab === "Home" ? "text-[#783f8e]" : ""}`}
+              className={`${currentTab === "Home" ? "bg-gradient-to-r from-[#5c24cc] to-[#FF0B55] bg-clip-text text-transparent" : ""}`}
               onClick={() => {
                 setcurrentTab("Home");
                 navigate("/");
@@ -23,7 +23,7 @@ function Navbar() {
             </button>
 
             <button
-              className={`${currentTab === "Products" ? "text-[#783f8e]" : ""}`}
+              className={`${currentTab === "Products" ? "bg-gradient-to-r from-[#5c24cc] to-[#FF0B55] bg-clip-text text-transparent" : ""}`}
               onClick={() => {
                 setcurrentTab("Products");
                 navigate("/Products");
@@ -33,14 +33,14 @@ function Navbar() {
             </button>
 
             <button
-              className={`${currentTab === "aboutUs" ? "text-[#783f8e]" : ""}`}
+              className={`${currentTab === "aboutUs" ? "bg-gradient-to-r from-[#5c24cc] to-[#FF0B55] bg-clip-text text-transparent" : ""}`}
               onClick={() => setcurrentTab("aboutUs")}
             >
               Contact Us
             </button>
           </div>
 
-          <button className="bg-[#783f8e] py-1 px-3 rounded text-white shadow">
+          <button className="bg-gradient-to-r from-[#5c24cc] to-[#FF0B55] py-1 px-3 rounded text-white shadow">
             Reach Us
           </button>
         </div>
